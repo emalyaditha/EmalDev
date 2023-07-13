@@ -31,7 +31,7 @@
 
 */
 :root {
-    --primary_color: #28e98c;
+    --primary_color: #28d3e9;
 }
 *,*::before,*::after {
     margin: 0;
@@ -44,7 +44,7 @@ body {
     font-size: 16px;
     scroll-behavior: smooth;
     color: #999999;
-    background: #1f1f1f;
+    background: #141313;
     line-height: 1.7;
     overflow-x: hidden;
     height: 100vh;
@@ -115,6 +115,7 @@ ul {
     display: inline-flex;
     align-items: center;
 }
+
 .subtitle i {
     margin-bottom: 1px;
     font-size: 14px;
