@@ -690,6 +690,7 @@ main.drake-main {
 }
 .left-sidebar .sidebar-header .designation {
     max-width: 110px;
+    padding-top: 50px;
     text-align: right;
     color: #fff;
     font-size: 14px;
