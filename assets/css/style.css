@@ -662,7 +662,10 @@ main.drake-main {
 .section-header h1 span {
     color: var(--primary_color);
 }
-
+/* Logo */
+.lol {
+    padding-top: 50px;
+}
 
 /* 06 - Left Sidebar */
 .left-sidebar {
