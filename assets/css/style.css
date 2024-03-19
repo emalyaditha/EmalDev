@@ -1,3 +1,4 @@
+
 /* 
     -- Table of Content --
 
@@ -29,9 +30,8 @@
     * @Keyframe
 
 */
-
 :root {
-    primary_color: #08b35d;
+    --primary_color: #28e98c;
 }
 *,*::before,*::after {
     margin: 0;
@@ -43,8 +43,8 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     scroll-behavior: smooth;
-    color: #fcfcfc;
-    background: #141414fd;
+    color: #999999;
+    background: #1f1f1f;
     line-height: 1.7;
     overflow-x: hidden;
     height: 100vh;
@@ -52,10 +52,6 @@ body {
 .bg-white {
     background: #fff;
 }
-.pro {  
-    max-width: 160%;
-    max-height: 200%;
-}  
 img {
     max-width: 100%;
 }
@@ -77,7 +73,7 @@ ul {
 }
 .theme-btn {
     background: var(--primary_color);
-    color: #cfb416;
+    color: #000000;
     display: block;
     text-align: center;
     padding: 11px 58px 10px 58px;
@@ -119,7 +115,6 @@ ul {
     display: inline-flex;
     align-items: center;
 }
-
 .subtitle i {
     margin-bottom: 1px;
     font-size: 14px;
@@ -662,10 +657,7 @@ main.drake-main {
 .section-header h1 span {
     color: var(--primary_color);
 }
-/* Logo */
-.lol {
-    padding-top: 50px;
-}
+
 
 /* 06 - Left Sidebar */
 .left-sidebar {
@@ -693,7 +685,6 @@ main.drake-main {
 }
 .left-sidebar .sidebar-header .designation {
     max-width: 110px;
-    padding-top: 50px;
     text-align: right;
     color: #fff;
     font-size: 14px;
