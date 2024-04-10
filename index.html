@@ -498,7 +498,7 @@
                             <p id="required-msg">* Marked fields are required to fill.</p>
 
                             <form class="contact-form scroll-animation" data-animation="fade_from_bottom" 
-                            action="https://formspree.io/f/xjvneqyw" method="POST">
+                            action="" method="POST">
                                 <div class="alert alert-success messenger-box-contact__msg" style="display: none" role="alert">
                                 Thank You for your Responce.
                                 </div>
@@ -536,7 +536,30 @@
             </div>
         </div>
     </main>
-    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('.contact-form').submit(function(e) {
+          e.preventDefault();
+          var formData = new FormData(this);
+  
+          $.ajax({
+            url: '<./php/send_email.php>',
+            method: 'POST',
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: function(data) {
+              $('.messenger-box-contact__msg').show().text('Thank you for your response.');
+              $('.contact-form')[0].reset();
+            },
+            error: function(err) {
+              console.log(err);
+            }
+          });
+        });
+      });
+    </script>
     <script src="./assets/js/jquery.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/owl.carousel.js"></script>
