@@ -498,7 +498,7 @@
                             <p id="required-msg">* Marked fields are required to fill.</p>
 
                             <form class="contact-form scroll-animation" data-animation="fade_from_bottom" 
-                            action="" method="POST">
+                            action="./assets/php/send_email.php" method="POST">
                                 <div class="alert alert-success messenger-box-contact__msg" style="display: none" role="alert">
                                 Thank You for your Responce.
                                 </div>
@@ -544,7 +544,7 @@
           var formData = new FormData(this);
   
           $.ajax({
-            url: '<./php/send_email.php>',
+            url: '<./assets/php/send_email.php>',
             method: 'POST',
             data: formData,
             processData: false,
