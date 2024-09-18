@@ -1,0 +1,353 @@
+/* General Styles */
+body {
+  font-family: "Courier New", monospace;
+  background-color: #121212;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  max-width: 1200px;
+}
+
+/* Button Styles */
+#toggle-button {
+  background-color: #76c7c0;
+  color: #121212;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#toggle-button:hover {
+  background-color: #ffffff;
+  color: #76c7c0;
+}
+
+#toggle-button.active {
+  background-color: #ffffff;
+  color: #76c7c0;
+}
+
+/* Timeline Styles */
+.timeline {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+.timeline-item {
+  margin-bottom: 15px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Header Section */
+.header {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #1a1a1a;
+}
+
+.header img {
+  border-radius: 10px; /* Slightly curved corners */
+  border: 5px solid #76c7c0; /* Teal Color */
+  width: 300px; /* Increased size */
+  height: 300px; /* Increased size */
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  margin: 20px auto; /* Centering the image */
+}
+
+.header h1 {
+  font-size: 48px;
+  color: #76c7c0; /* Teal Color */
+  margin: 20px 0;
+}
+
+.header p {
+  font-size: 20px;
+  color: #cfcfcf;
+  margin: 10px 0 30px 0;
+}
+
+/* Download CV Button */
+.download-cv {
+  background-color: #76c7c0; /* Teal Color */
+  color: #121212;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: "Courier New", monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-top: 20px;
+}
+
+.download-cv:hover {
+  background-color: #ffffff;
+  color: #76c7c0; /* Teal Color */
+}
+
+.download-cv:active {
+  background-color: #64b5a0; /* Darker teal color for active state */
+}
+
+/* About Section */
+.about-section {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+  padding: 60px 20px;
+}
+
+.about-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.experience-info,
+.about-text {
+  flex: 1 1 100%;
+  margin: 20px;
+}
+
+.experience-info h2,
+.about-text h2 {
+  font-size: 36px;
+  color: #76c7c0; /* Teal Color */
+}
+
+.experience-info p,
+.about-text p {
+  font-size: 20px;
+  color: #e0e0e0;
+  margin-top: 10px;
+}
+
+/* Experience Section */
+.experience {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+  padding: 60px 20px;
+}
+
+.experience .section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.experience .section-title h2 {
+  font-size: 36px;
+  color: #76c7c0; /* Teal Color */
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.timeline-item {
+  background-color: #2a2a2a;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.timeline-item h4 {
+  font-size: 24px;
+  color: #76c7c0; /* Teal Color */
+  margin: 0;
+}
+
+.timeline-item strong {
+  display: block;
+  font-size: 18px;
+  color: #b0b0b0;
+  margin: 5px 0;
+}
+
+.timeline-item p {
+  font-size: 16px;
+  color: #e0e0e0;
+  margin: 0;
+}
+
+/* Skills Section */
+.skills {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+  padding: 60px 20px;
+}
+
+.skills .section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.skills .section-title h2 {
+  font-size: 36px;
+  color: #76c7c0; /* Teal Color */
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.skill-item {
+  background-color: #2a2a2a;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1 1 22%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.skill-item img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.skill-item h4 {
+  font-size: 24px;
+  color: #76c7c0; /* Teal Color */
+  margin: 0;
+}
+
+.skill-item .percentage {
+  font-size: 20px;
+  color: #e0e0e0;
+  margin-top: 10px;
+}
+
+/* Contact Section */
+.contact {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+  padding: 60px 20px;
+}
+
+.contact .section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact .section-title h2 {
+  font-size: 36px;
+  color: #76c7c0; /* Teal Color */
+}
+
+.contact form {
+  max-width: 600px;
+  margin: auto;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #76c7c0; /* Teal Color */
+  border-radius: 5px;
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+}
+
+.contact button {
+  background-color: #76c7c0; /* Teal Color */
+  color: #121212;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-family: "Courier New", monospace;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+  background-color: #ffffff;
+  color: #76c7c0; /* Teal Color */
+}
+
+/* Footer Section */
+.footer {
+  background-color: #1a1a1a;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 14px;
+  color: #e0e0e0;
+}
+
+/* Responsive Design */
+
+/* Medium devices (max-width: 992px) */
+@media (max-width: 992px) {
+  .header img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .skills-container {
+    flex-wrap: wrap;
+  }
+
+  .skill-item {
+    flex: 1 1 45%; /* Two columns */
+  }
+
+  .download-cv {
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+}
+
+/* Small devices (max-width: 576px) */
+@media (max-width: 576px) {
+  .header img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .skills-container {
+    flex-wrap: wrap;
+  }
+
+  .skill-item {
+    flex: 1 1 48%; /* Two columns */
+    padding: 15px;
+  }
+
+  .skill-item img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .download-cv {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
