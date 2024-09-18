@@ -1,17 +1,21 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const toggleButton = document.getElementById("toggle-button");
-  const educationSection = document.getElementById("education");
-  const experienceSection = document.getElementById("experience");
 
-  toggleButton.addEventListener("click", function () {
-    if (experienceSection.classList.contains("hidden")) {
-      educationSection.classList.add("hidden");
-      experienceSection.classList.remove("hidden");
-      toggleButton.textContent = "Show Education";
-    } else {
-      experienceSection.classList.add("hidden");
-      educationSection.classList.remove("hidden");
-      toggleButton.textContent = "Show Experience";
-    }
-  });
-});
+    document.addEventListener('DOMContentLoaded', function() {
+      let isExperienceVisible = false;
+
+      document.getElementById('toggle-button').addEventListener('click', function() {
+        const experience = document.getElementById('experience');
+        const education = document.getElementById('education');
+
+        if (isExperienceVisible) {
+          experience.style.display = 'none';
+          education.style.display = 'block';
+          this.textContent = 'Show Experience'; // Update button text
+        } else {
+          experience.style.display = 'block';
+          education.style.display = 'none';
+          this.textContent = 'Show Education'; // Update button text
+        }
+
+        isExperienceVisible = !isExperienceVisible;
+      });
+    });

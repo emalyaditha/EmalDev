@@ -62,8 +62,8 @@ body {
 .header img {
   border-radius: 10px; /* Slightly curved corners */
   border: 5px solid #76c7c0; /* Teal Color */
-  width: 300px; /* Increased size */
-  height: 300px; /* Increased size */
+  width: 250px; /* Increased size */
+  height: 250px; /* Increased size */
   object-fit: cover;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   margin: 20px auto; /* Centering the image */
@@ -103,6 +103,30 @@ body {
 
 .download-cv:active {
   background-color: #64b5a0; /* Darker teal color for active state */
+}
+
+/* Social Media Icons */
+.social-media-icons {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.social-media-icons li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.social-media-icons a {
+  color: #76c7c0; /* Teal Color */
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-media-icons a:hover {
+  color: #ffffff;
 }
 
 /* About Section */
