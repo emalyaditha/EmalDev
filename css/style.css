@@ -138,29 +138,40 @@ body {
 
 .about-info {
   display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
   flex-wrap: wrap;
   gap: 20px;
 }
 
 .experience-info,
 .about-text {
-  flex: 1 1 100%;
+  flex: 1;
   margin: 20px;
 }
 
-.experience-info h2,
-.about-text h2 {
+.experience-info h2 {
   font-size: 36px;
   color: #76c7c0; /* Teal Color */
 }
 
-.experience-info p,
-.about-text p {
+.experience-info p {
   font-size: 20px;
   color: #e0e0e0;
   margin-top: 10px;
 }
 
+.about-text h2 {
+  font-size: 36px;
+  color: #76c7c0; /* Teal Color */
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 18px;
+  color: #e0e0e0;
+  line-height: 1.8;
+}
 /* Experience Section */
 .experience {
   background-color: #1a1a1a;
