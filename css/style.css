@@ -60,18 +60,18 @@ body {
 }
 
 .header img {
-  border-radius: 10px; /* Slightly curved corners */
-  border: 5px solid #76c7c0; /* Teal Color */
-  width: 250px; /* Increased size */
-  height: 250px; /* Increased size */
+  border-radius: 10px;
+  border: 5px solid #76c7c0;
+  width: 250px;
+  height: 250px;
   object-fit: cover;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  margin: 20px auto; /* Centering the image */
+  margin: 20px auto;
 }
 
 .header h1 {
   font-size: 48px;
-  color: #76c7c0; /* Teal Color */
+  color: #76c7c0;
   margin: 20px 0;
 }
 
@@ -83,7 +83,7 @@ body {
 
 /* Download CV Button */
 .download-cv {
-  background-color: #76c7c0; /* Teal Color */
+  background-color: #76c7c0;
   color: #121212;
   padding: 10px 20px;
   border-radius: 5px;
@@ -98,11 +98,11 @@ body {
 
 .download-cv:hover {
   background-color: #ffffff;
-  color: #76c7c0; /* Teal Color */
+  color: #76c7c0;
 }
 
 .download-cv:active {
-  background-color: #64b5a0; /* Darker teal color for active state */
+  background-color: #64b5a0;
 }
 
 /* Social Media Icons */
@@ -119,7 +119,7 @@ body {
 }
 
 .social-media-icons a {
-  color: #76c7c0; /* Teal Color */
+  color: #76c7c0;
   font-size: 24px;
   text-decoration: none;
   transition: color 0.3s ease;
@@ -152,7 +152,7 @@ body {
 
 .experience-info h2 {
   font-size: 36px;
-  color: #76c7c0; /* Teal Color */
+  color: #76c7c0;
 }
 
 .experience-info p {
@@ -163,7 +163,7 @@ body {
 
 .about-text h2 {
   font-size: 36px;
-  color: #76c7c0; /* Teal Color */
+  color: #76c7c0;
   margin-bottom: 20px;
 }
 
@@ -172,6 +172,7 @@ body {
   color: #e0e0e0;
   line-height: 1.8;
 }
+
 /* Experience Section */
 .experience {
   background-color: #1a1a1a;
@@ -186,7 +187,7 @@ body {
 
 .experience .section-title h2 {
   font-size: 36px;
-  color: #76c7c0; /* Teal Color */
+  color: #76c7c0;
 }
 
 .timeline {
@@ -204,7 +205,7 @@ body {
 
 .timeline-item h4 {
   font-size: 24px;
-  color: #76c7c0; /* Teal Color */
+  color: #76c7c0;
   margin: 0;
 }
 
@@ -235,7 +236,7 @@ body {
 
 .skills .section-title h2 {
   font-size: 36px;
-  color: #76c7c0; /* Teal Color */
+  color: #76c7c0;
 }
 
 .skills-container {
@@ -265,7 +266,7 @@ body {
 
 .skill-item h4 {
   font-size: 24px;
-  color: #76c7c0; /* Teal Color */
+  color: #76c7c0;
   margin: 0;
 }
 
@@ -273,6 +274,36 @@ body {
   font-size: 20px;
   color: #e0e0e0;
   margin-top: 10px;
+}
+
+/* Certifications Section */
+.certifications {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+  padding: 60px 20px;
+}
+
+.certifications .section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.certifications .section-title h2 {
+  font-size: 36px;
+  color: #76c7c0;
+}
+
+.certifications ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.certifications ul li {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #e0e0e0;
 }
 
 /* Contact Section */
@@ -289,7 +320,7 @@ body {
 
 .contact .section-title h2 {
   font-size: 36px;
-  color: #76c7c0; /* Teal Color */
+  color: #76c7c0;
 }
 
 .contact form {
@@ -302,14 +333,14 @@ body {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
-  border: 1px solid #76c7c0; /* Teal Color */
+  border: 1px solid #76c7c0;
   border-radius: 5px;
   background-color: #2a2a2a;
   color: #e0e0e0;
 }
 
 .contact button {
-  background-color: #76c7c0; /* Teal Color */
+  background-color: #76c7c0;
   color: #121212;
   padding: 10px 15px;
   border: none;
@@ -322,7 +353,7 @@ body {
 
 .contact button:hover {
   background-color: #ffffff;
-  color: #76c7c0; /* Teal Color */
+  color: #76c7c0;
 }
 
 /* Footer Section */
@@ -336,13 +367,14 @@ body {
   font-size: 14px;
   color: #e0e0e0;
 }
+
 /* Responsive Design */
 
 /* Medium devices (max-width: 992px) */
 @media (max-width: 992px) {
   .header img {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
   }
 
   .skills-container {
@@ -356,6 +388,21 @@ body {
   .download-cv {
     padding: 12px 24px;
     font-size: 16px;
+  }
+
+  .about-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .experience-info,
+  .about-text {
+    margin: 10px 0;
+  }
+
+  .experience-info h2,
+  .about-text h2 {
+    font-size: 28px;
   }
 }
 
@@ -383,5 +430,30 @@ body {
   .download-cv {
     padding: 10px 20px;
     font-size: 14px;
+  }
+
+  .about-info {
+    flex-direction: column;
+  }
+
+  .experience-info,
+  .about-text {
+    margin: 10px 0;
+  }
+
+  .experience-info h2,
+  .about-text h2 {
+    font-size: 24px;
+  }
+
+  .certifications ul li {
+    font-size: 18px;
+  }
+
+  .experience .section-title h2,
+  .skills .section-title h2,
+  .certifications .section-title h2,
+  .contact .section-title h2 {
+    font-size: 28px;
   }
 }
