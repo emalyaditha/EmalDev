@@ -276,11 +276,10 @@ body {
   margin-top: 10px;
 }
 
-/* Certifications Section */
+/* General Section Styles */
 .certifications {
-  background-color: #1a1a1a;
-  color: #e0e0e0;
-  padding: 60px 20px;
+  padding: 60px 0;
+  background-color: #121212;
 }
 
 .certifications .section-title {
@@ -289,21 +288,55 @@ body {
 }
 
 .certifications .section-title h2 {
-  font-size: 36px;
+  font-size: 2.5rem;
   color: #76c7c0;
+  font-weight: bold;
 }
 
-.certifications ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+/* Container and Certification Styles */
+.certifications-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.certification-item {
+  color: #76c7c0; /* Teal color for text */
+  text-decoration: none; /* Remove underline from links */
+  font-size: 1.2rem;
   text-align: center;
+  padding: 10px;
+  transition: color 0.3s; /* Smooth color transition on hover */
+  flex: 1 1 calc(33.333% - 20px); /* Three items per row, accounting for gaps */
 }
 
-.certifications ul li {
-  font-size: 20px;
-  margin: 10px 0;
-  color: #e0e0e0;
+.certification-item:hover {
+  color: #fff; /* Change color on hover for emphasis */
+}
+
+.certification-item h4 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.certification-item p {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .certifications-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .certification-item {
+    font-size: 1rem;
+    padding: 8px;
+    flex: 1 1 100%; /* Stack items vertically on smaller screens */
+  }
 }
 
 /* Contact Section */
