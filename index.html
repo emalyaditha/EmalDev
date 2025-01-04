@@ -3,203 +3,155 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Emal Yaditha Portfolio</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <title>Emal Yaditha | Portfolio</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
     <script src="js/scripts.js" defer></script>
   </head>
   <body>
-    <div class="header">
-      <img src="./images/MeNew.jpeg" alt="Profile Image" />
-      <h1>Hi, I'm Emal Yaditha</h1>
-      <p>
-        Software Engineer / Application Support Engineer<br />
-        Crafting Code, Building Dreams
-      </p>
-      <a
-        href="https://drive.usercontent.google.com/download?id=1pX7hL1-sGb5xO-dpN7QYVoH5w6uJOo6o&export=download&authuser=0&confirm=t&uuid=ba42f18b-d0ec-4bb2-a95a-b0ffaf472cd6&at=APZUnTWaf9pSYwntvOVemlTy21HS:1710731712536"
-        class="download-cv"
-        >Download CV</a
-      >
-      <!-- Social Media Icons -->
-      <ul class="social-media-icons">
-        <li>
-          <a
-            href="https://twitter.com/emalyaditha"
-            target="_blank"
-            aria-label="Twitter"
-          >
-            <i class="fab fa-twitter"></i>
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/emalyaditha/"
-            target="_blank"
-            aria-label="LinkedIn"
-          >
-            <i class="fab fa-linkedin"></i>
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.instagram.com/emalyaditha_/"
-            target="_blank"
-            aria-label="Instagram"
-          >
-            <i class="fab fa-instagram"></i>
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://github.com/emalyaditha"
-            target="_blank"
-            aria-label="GitHub"
-          >
-            <i class="fab fa-github"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
-
-    <!-- About Section -->
-    <section class="about-section section-padding">
+    <!-- Navigation -->
+    <header class="header">
       <div class="container">
-        <div class="about-info">
-          <div class="experience-info">
-            <h2><span>3+</span> Years of Experience</h2>
-            <p>20+ projects completed in 3 countries</p>
-          </div>
-          <div class="about-text">
-            <h2>About</h2>
-            <p>
-              Software Engineer with a passion for innovation.<br />
-              Trying to find an opportunity to embark myself as a software
-              engineer so I can help my career grow. I would say my
-              never-giving-up attitude is my strong suit when it comes to
-              coding. My good communication skills have made my work much
-              easier.
-            </p>
-          </div>
+        <nav class="navbar">
+          <a href="#home" class="logo">Emal Yaditha</a>
+          <button id="menu-toggle" class="menu-toggle" aria-label="Toggle Menu">
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience-section">Experience</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <img
+            src="./images/MeNew.jpeg"
+            alt="Profile Image"
+            class="profile-img"
+          />
+          <h1>Hi, I'm <span>Emal Yaditha</span></h1>
+          <p>Software Engineer | Application Support Engineer</p>
+          <a href="#contact" class="btn primary-btn">Contact Me</a>
+          <a
+            href="https://drive.google.com/download/your-cv-link"
+            class="btn secondary-btn"
+            >Download CV</a
+          >
+        </div>
+        <div class="social-links" style="">
+          <a href="https://twitter.com/emalyaditha" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/emalyaditha/" target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://www.instagram.com/emalyaditha_/" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://github.com/emalyaditha" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
         </div>
       </div>
     </section>
 
-    <!-- Education & Experience Section -->
-    <section class="education-experience section-padding">
+    <!-- About Section -->
+    <section id="about" class="about section">
       <div class="container">
         <div class="section-title">
-          <h2>Education & Experience</h2>
-          <button id="toggle-button">Show Experience</button>
+          <h2>About Me</h2>
         </div>
-
-        <div id="education" class="timeline">
-          <div class="timeline-item">
-            <h4>BSc in Software Engineering</h4>
-            <strong>2023 - 2024</strong>
-            <p>Cardiff Metropolitan University</p>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              I am a Software Engineer with over <strong>3 years</strong> of
+              experience building and supporting innovative software solutions.
+              My passion lies in crafting scalable and efficient systems, driven
+              by my never-giving-up attitude and excellent communication skills.
+            </p>
           </div>
-
-          <div class="timeline-item">
-            <h4>Higher National Diploma</h4>
-            <strong>2019 - 2021</strong>
-            <p>International College of Business and Technology</p>
-          </div>
-
-          <div class="timeline-item">
-            <h4>Lyceum International School</h4>
-            <strong>2007 - 2018</strong>
-            <p>School</p>
-          </div>
-        </div>
-
-        <div id="experience" class="timeline hidden">
-          <div class="timeline-item">
-            <h4>Retail Information Technologies (Pvt) Ltd</h4>
-            <strong>February 2024 - Present</strong>
-            <p>Trainee Product Support Engineer</p>
-          </div>
-
-          <div class="timeline-item">
-            <h4>Retail Information Technologies (Pvt) Ltd</h4>
-            <strong>August 2023 - February 2024</strong>
-            <p>Intern Product Support Engineer</p>
-          </div>
-
-          <div class="timeline-item">
-            <h4>SOMRO BPO Services (Private) Limited</h4>
-            <strong>December 2022 - February 2023</strong>
-            <p>Software Engineer</p>
-          </div>
-
-          <div class="timeline-item">
-            <h4>Self Employed</h4>
-            <strong>December 2019 - December 2022</strong>
-            <p>Independent WEB Developer</p>
+          <div class="experience-stats">
+            <div class="stat">
+              <h3>3+</h3>
+              <p>Years of Experience</p>
+            </div>
+            <div class="stat">
+              <h3>20+</h3>
+              <p>Completed Projects</p>
+            </div>
+            <div class="stat">
+              <h3>3</h3>
+              <p>Countries Worked In</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Skills Section -->
-    <section class="skills section-padding">
+    <section id="skills" class="skills section">
       <div class="container">
         <div class="section-title">
           <h2>Skills</h2>
         </div>
-        <div class="skills-container">
-          <div class="skill-item">
-            <img src="./images/php.png" alt="PHP Icon" class="skill-icon" />
+        <div class="skills-grid">
+          <div class="skill-card">
+            <img src="./images/php.png" alt="PHP Icon" />
             <h4>PHP</h4>
           </div>
-          <div class="skill-item">
-            <img src="./images/java.png" alt="Java Icon" class="skill-icon" />
+          <div class="skill-card">
+            <img src="./images/java.png" alt="Java Icon" />
             <h4>Java</h4>
           </div>
-          <div class="skill-item">
-            <img src="./images/csharp.png" alt="C# Icon" class="skill-icon" />
+          <div class="skill-card">
+            <img src="./images/csharp.png" alt="C# Icon" />
             <h4>C#</h4>
           </div>
-          <div class="skill-item">
-            <img src="./images/cpl.png" alt="C++ Icon" class="skill-icon" />
+          <div class="skill-card">
+            <img src="./images/cpl.png" alt="C++ Icon" />
             <h4>C++</h4>
           </div>
-          <div class="skill-item">
-            <img
-              src="./images/java-script.png"
-              alt="JavaScript Icon"
-              class="skill-icon"
-            />
+          <div class="skill-card">
+            <img src="./images/java-script.png" alt="JavaScript Icon" />
             <h4>JavaScript</h4>
           </div>
-          <div class="skill-item">
-            <img src="./images/mysql.png" alt="MySQL Icon" class="skill-icon" />
+          <div class="skill-card">
+            <img src="./images/mysql.png" alt="MySQL Icon" />
             <h4>MySQL</h4>
           </div>
-          <div class="skill-item">
-            <img
-              src="./images/sql-server.png"
-              alt="SQL Server Icon"
-              class="skill-icon"
-            />
+          <div class="skill-card">
+            <img src="./images/sql-server.png" alt="SQL Server Icon" />
             <h4>SQL Server</h4>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="certifications section-padding">
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications section">
       <div class="container">
         <div class="section-title">
           <h2>Certifications</h2>
         </div>
-        <div class="certifications-container">
+        <div class="certifications-list">
           <a
-            href="https://icbtsis.lk/verification/?id=NjY5NjY,"
-            class="certification-item"
+            href="https://icbtsis.lk/verification/?id=NjY5NjY"
+            class="certification-card"
             target="_blank"
           >
             <h4>Diploma in ICT</h4>
@@ -207,7 +159,7 @@
           </a>
           <a
             href="https://open.uom.lk/lms/mod/customcert/verify_certificate.php?contextid=4776&code=Z2EHQUgEAw&qrcode=1"
-            class="certification-item"
+            class="certification-card"
             target="_blank"
           >
             <h4>Python for Beginners</h4>
@@ -215,64 +167,88 @@
           </a>
           <a
             href="https://www.hackerrank.com/certificates/9440168102b0"
-            class="certification-item"
+            class="certification-card"
             target="_blank"
           >
             <h4>SQL (Basic) Certificate</h4>
-            <p>Issued by HackerRank Certificate</p>
+            <p>Issued by HackerRank</p>
           </a>
           <a
             href="https://www.hackerrank.com/certificates/7d8001b0b9f0"
-            class="certification-item"
+            class="certification-card"
             target="_blank"
           >
             <h4>SQL (Intermediate) Certificate</h4>
-            <p>Issued by HackerRank Certificate</p>
+            <p>Issued by HackerRank</p>
           </a>
           <a
             href="https://www.hackerrank.com/certificates/549e2cda6a47"
-            class="certification-item"
+            class="certification-card"
             target="_blank"
           >
             <h4>JavaScript (Basic)</h4>
-            <p>Issued by HackerRank Certificate</p>
+            <p>Issued by HackerRank</p>
           </a>
           <a
             href="https://www.hackerrank.com/certificates/861f08d51202"
-            class="certification-item"
+            class="certification-card"
             target="_blank"
           >
             <h4>Java (Basic)</h4>
-            <p>Issued by HackerRank Certificate</p>
+            <p>Issued by HackerRank</p>
           </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience-section">
+      <div class="section-title">
+        <h2>Work Experience</h2>
+      </div>
+
+      <div id="experience" class="timeline">
+        <div class="timeline-item">
+          <h4>Retail Information Technologies (Pvt) Ltd</h4>
+          <strong>August 2023 - Present</strong>
+          <p><strong>Product Support Engineer</strong></p>
+          <p><em>Trainee Product Support Engineer (6 Months)</em></p>
+          <p><em>Intern Product Support Engineer (6 Months)</em></p>
+        </div>
+
+        <div class="timeline-item">
+          <h4>SOMRO BPO Services (Private) Limited</h4>
+          <strong>December 2022 - February 2023</strong>
+          <p><strong>Software Engineer</strong></p>
+        </div>
+
+        <div class="timeline-item">
+          <h4>Self Employed</h4>
+          <strong>December 2019 - December 2022</strong>
+          <p><strong>Independent WEB Developer</strong></p>
         </div>
       </div>
     </section>
 
     <!-- Contact Section -->
-    <section class="contact section-padding">
+    <section id="contact" class="contact section">
       <div class="container">
         <div class="section-title">
           <h2>Contact Me</h2>
         </div>
-        <form action="#" method="post">
-          <input type="text" name="name" placeholder="Your Name" required />
-          <input type="email" name="email" placeholder="Your Email" required />
-          <textarea
-            name="message"
-            rows="6"
-            placeholder="Your Message"
-            required
-          ></textarea>
-          <button type="submit" class="send-message">Send Message</button>
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn primary-btn">Send Message</button>
         </form>
       </div>
     </section>
 
-    <!-- Footer Section -->
-    <footer>
+    <!-- Footer -->
+    <footer class="footer">
       <div class="container">
-        <p>&copy; 2024 Emal Yaditha | Portfolio</p>
+        <p>&copy; 2024 Emal Yaditha | All Rights Reserved</p>
       </div>
     </footer>
   </body>
