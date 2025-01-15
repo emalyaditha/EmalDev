@@ -116,7 +116,7 @@ a {
 }
 
 .hero .profile-img {
-  width: 300px !important; /* Increased size */
+  width: 250px !important; /* Increased size */
   height: 300px !important; /* Set to the same value to make it a square */
   margin-bottom: 1rem;
   border: 1px solid #1e1e2f;
